@@ -1,12 +1,6 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import {
-  makeStyles,
-  AppBar,
-  Toolbar,
-  IconButton,
-  Typography,
-} from "@material-ui/core";
+import { makeStyles, AppBar, Toolbar, IconButton, Typography } from "@material-ui/core";
 import AccountCircle from "@material-ui/icons/AccountCircle";
 import AddCircleOutlineIcon from "@material-ui/icons/AddCircleOutline";
 import NotificationMenu from "./NotificationMenu";
@@ -26,7 +20,7 @@ const useStyles = makeStyles(() => ({
 
 const Header = () => {
   const classes = useStyles();
-  const displayName = "설리번 선생님";
+  const displayName = "riverkim";
 
   return (
     <div className={classes.grow}>
@@ -45,11 +39,7 @@ const Header = () => {
               </IconButton>
             </Link>
             <Link href="/myfeed">
-              <IconButton
-                edge="end"
-                aria-label="account of user"
-                color="inherit"
-              >
+              <IconButton edge="end" aria-label="account of user" color="inherit">
                 <AccountCircle />
                 <Typography variant="h6" noWrap>
                   {displayName} 님 반갑습니다
